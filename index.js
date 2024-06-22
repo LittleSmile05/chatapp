@@ -19,7 +19,7 @@ const pool = new Pool({
 const port = 5000;
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + './new-folder/index.html');
 });
 
 io.on('connection', async (socket) => {
